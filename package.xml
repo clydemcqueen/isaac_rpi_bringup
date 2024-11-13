@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+
+  <name>isaac_rpi_bringup</name>
+  <version>0.1.0</version>
+  <description>Launch scripts</description>
+
+  <maintainer email="clyde@mcqueen.net">Clyde McQueen</maintainer>
+  <license>MIT</license>
+
+  <url type="repository">https://github.com/clydemcqueen/isaac_rpi_bringup.git</url>
+  <url type="bugtracker">https://github.com/clydemcqueen/isaac_rpi_bringup/issues</url>
+
+  <author>Clyde McQueen</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>isaac_ros_argus_camera</depend>
+  <depend>isaac_ros_image_proc</depend>
+  <depend>isaac_ros_apriltag</depend>
+  <depend>camera_calibration</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>
