@@ -19,7 +19,7 @@ from launch_ros.descriptions import ComposableNode
 from launch.actions import OpaqueFunction
 
 def launch_setup(context):
-    camera_info = PathJoinSubstitution([FindPackageShare('isaac_rpi_bringup'), 'config', 'rpi_1280x720.yaml'])
+    camera_info = PathJoinSubstitution([FindPackageShare('isaac_rpi_bringup'), 'config', 'na1_1280x720.yaml'])
 
     camera_node = ComposableNode(
         name='isaac_camera',
@@ -29,7 +29,7 @@ def launch_setup(context):
             'camera_id': 0,
             'mode': 4,  # See list above
             'camera_info_url': f"file://{camera_info.perform(context)}",
-            'optical_frame_name': 'rpi_camera',
+            'optical_frame_name': 'na1_1280x720',
         }],
         remappings=[
             ('left/image_raw', 'image_raw'),
